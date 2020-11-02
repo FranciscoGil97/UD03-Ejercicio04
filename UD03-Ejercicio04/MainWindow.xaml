@@ -18,7 +18,8 @@
             DockPanel.Dock="Bottom"
             Height="70"
             Background="LightBlue"
-            Margin="15">
+            Margin="15"
+            LastChildFill="False">
 
             <TextBlock
                 DockPanel.Dock="Left"
@@ -26,7 +27,6 @@
                 FontSize="20"
                 FontFamily="Rubik"
                 VerticalAlignment="Center"
-                TextAlignment="Left" 
                 Margin="8"/>
 
             <TextBlock
@@ -35,7 +35,6 @@
                 FontSize="20"
                 FontFamily="Rubik"
                 VerticalAlignment="Center"
-                TextAlignment="Right"
                 Margin="8" />
         </DockPanel>
         <Border
@@ -47,7 +46,7 @@
             <DockPanel
                 Width="100"
                 Background="LightGreen"
-                LastChildFill="True">
+                LastChildFill="False">
                 <Button
                     Margin="5"
                     Content="Eliminar imagen" 
@@ -67,8 +66,7 @@
                 <Button
                     Margin="5"
                     Content="Rotar"
-                    DockPanel.Dock="Bottom"/>
-                <TextBlock />
+                    DockPanel.Dock="Bottom" />
             </DockPanel>
         </Border>
         <TextBlock
