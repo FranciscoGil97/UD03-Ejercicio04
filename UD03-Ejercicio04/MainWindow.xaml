@@ -10,6 +10,7 @@
     Height="650"
     Width="800"
     MinWidth="500"
+    MinHeight="500"
     Icon="/imagen.ico">
     <DockPanel
         LastChildFill="True">
