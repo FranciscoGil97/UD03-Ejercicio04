@@ -12,6 +12,29 @@
     MinWidth="500"
     MinHeight="500"
     Icon="/imagen.ico">
+    <Window.Resources>
+        <Style
+            TargetType="Image">
+            <Setter
+                Property="Width"
+                Value="150" />
+        </Style>
+        <Style
+            TargetType="TextBlock">
+            <Setter
+                Property="FontFamily"
+                Value="Rubik" />
+            <Setter
+                Property="VerticalAlignment"
+                Value="Center" />
+        </Style>
+        <Style
+            TargetType="Button">
+            <Setter
+                Property="Margin"
+                Value="5" />
+        </Style>
+    </Window.Resources>
     <DockPanel
         LastChildFill="True">
         <DockPanel
@@ -25,16 +48,12 @@
                 DockPanel.Dock="Left"
                 Text="Nº de imágenes: 10"
                 FontSize="20"
-                FontFamily="Rubik"
-                VerticalAlignment="Center"
                 Margin="8"/>
 
             <TextBlock
                 DockPanel.Dock="Right"
                 Text="Diseñado por Francisco Gil"
                 FontSize="20"
-                FontFamily="Rubik"
-                VerticalAlignment="Center"
                 Margin="8" />
         </DockPanel>
         <Border
@@ -48,23 +67,18 @@
                 Background="LightGreen"
                 LastChildFill="False">
                 <Button
-                    Margin="5"
                     Content="Eliminar imagen" 
                     DockPanel.Dock="Top"/>
                 <Button
-                    Margin="5"
                     Content="Añadir imagen"
                     DockPanel.Dock="Top" />
                 <Button
-                    Margin="5"
                     Content="Eliminar todas"
                     DockPanel.Dock="Top" />
                 <Button
-                    Margin="5"
                     Content="Recortar"
                     DockPanel.Dock="Bottom" />
                 <Button
-                    Margin="5"
                     Content="Rotar"
                     DockPanel.Dock="Bottom" />
             </DockPanel>
@@ -72,35 +86,25 @@
         <TextBlock
             Text="Visor de imágenes"
             DockPanel.Dock="Top"
-            FontSize="40"
-            TextAlignment="Center"
-            FontFamily="Rubik" />
+            FontSize="40"/>
 
         <WrapPanel>
             <Image
-                Source="episodioIV.jpg" 
-                Width="150"/>
+                Source="episodioIV.jpg"/>
             <Image
-                Source="episodioIV.jpg"
-                Width="150" />
+                Source="episodioIV.jpg" />
             <Image
-                Source="episodioIV.jpg"
-                Width="150" />
+                Source="episodioIV.jpg" />
             <Image
-                Source="episodioIV.jpg"
-                Width="150" />
+                Source="episodioIV.jpg" />
             <Image
-                Source="episodioIV.jpg"
-                Width="150" />
+                Source="episodioIV.jpg" />
             <Image
-                Source="episodioIV.jpg"
-                Width="150" />
+                Source="episodioIV.jpg" />
             <Image
-                Source="episodioIV.jpg"
-                Width="150" />
+                Source="episodioIV.jpg" />
             <Image
-                Source="episodioIV.jpg"
-                Width="150" />
+                Source="episodioIV.jpg" />
         </WrapPanel>
 
 
