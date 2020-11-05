@@ -86,7 +86,8 @@
         <TextBlock
             Text="Visor de imágenes"
             DockPanel.Dock="Top"
-            FontSize="40"/>
+            FontSize="40"
+            TextAlignment="Center"/>
 
         <WrapPanel>
             <Image
