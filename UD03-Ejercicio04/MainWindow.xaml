@@ -29,6 +29,17 @@
                 Value="Center" />
         </Style>
         <Style
+            TargetType="TextBlock"
+            x:Key="textoParteInferior"
+            BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter
+                Property="FontSize"
+                Value="20" />
+            <Setter
+                Property="Margin"
+                Value="8" />
+        </Style>
+        <Style
             TargetType="Button">
             <Setter
                 Property="Margin"
@@ -47,14 +58,12 @@
             <TextBlock
                 DockPanel.Dock="Left"
                 Text="Nº de imágenes: 10"
-                FontSize="20"
-                Margin="8"/>
+                Style="{StaticResource textoParteInferior}"/>
 
             <TextBlock
                 DockPanel.Dock="Right"
                 Text="Diseñado por Francisco Gil"
-                FontSize="20"
-                Margin="8" />
+                Style="{StaticResource textoParteInferior}"/>
         </DockPanel>
         <Border
             DockPanel.Dock="Right"
